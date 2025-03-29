@@ -2,7 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import { Progress } from "@/components/ui/progress"
 import { CirclePlay, Check, Bookmark, FileText, MessageCircleMore, RotateCcw, Trash2, Book } from 'lucide-react'
-
+import Reading from "@/assets/icons/Reading.svg"
+import Reasoning from "@/assets/icons/Reasoning.svg"
+import RIcon from "@/assets/icons/RIcon.svg"
 
 const TableItem = ({ reading }) => {
     return (
@@ -12,12 +14,12 @@ const TableItem = ({ reading }) => {
                 {
                     reading ?
                         <div className='flex items-center text-[#424551] dark:text-white gap-[8px]' >
-                            <Image src="/assets/reading.svg" alt="reading" width={20} height={20} />
+                            <Image src={Reading} alt="reading" width={20} height={20} />
                             Reading
                         </div>
                         :
                         <div className='flex items-center text-[#424551] dark:text-white gap-[8px]' >
-                            <Image src="/assets/reasoning.svg" alt="reasoning" width={20} height={20} />
+                            <Image src={Reasoning} alt="reasoning" width={20} height={20} />
                             Reasoning
                         </div>
                 }
@@ -42,7 +44,7 @@ const TableItem = ({ reading }) => {
             </div>
             <div className='col-span-1 flex items-center' >
                 <div className='flex items-center gap-[9px]' >
-                    <Image src="/assets/RIcon.svg" alt="edit" width={16} height={16} />
+                    <Image src={RIcon} alt="edit" width={16} height={16} />
                     <Bookmark size={16} className='text-[#494949] dark:text-white' />
                     <FileText size={16} className='text-[#494949] dark:text-white' />
                     <MessageCircleMore size={16} className='text-[#494949] dark:text-white' />
