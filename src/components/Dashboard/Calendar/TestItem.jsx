@@ -94,7 +94,7 @@ const TestItem = ({ reading }) => {
                     <Trash2 size={16} className='text-[#494949] dark:text-white' />
                 </div>
             </div>
-            
+
         </div>
     )
 }

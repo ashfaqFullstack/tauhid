@@ -8,14 +8,14 @@ import { cn } from "@/lib/utils"
 function Progress({
   className,
   value,
-  color = "bg-green-500", // Default color is green
+  color = "bg-[#0866FF]",
   ...props
 }) {
   return (
     <ProgressPrimitive.Root
       data-slot="progress"
       className={cn(
-        " relative h-1 w-full overflow-hidden rounded-md",
+        " relative h-1 w-[50%] overflow-hidden rounded-md",
         className
       )}
       {...props}>

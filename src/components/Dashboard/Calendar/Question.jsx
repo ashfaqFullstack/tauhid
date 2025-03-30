@@ -34,13 +34,6 @@ const Question = () => {
 
                 <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-gray-200 dark:from-gray-800 to-transparent pointer-events-none"></div>
             </div>
-            <div className='px-[40px] py-[22px] flex items-center justify-between ' >
-                <div className='text-[#787878] dark:text-white' >Viewing 1-20 of 90 results</div>
-                <div className='flex items-center gap-[13px]' >
-                    <div className='border border-[#D9DEE4] cursor-pointer text-[#D9DEE4] dark:border-[#787878] dark:text-[#787878] rounded-[7px] p-[10px]' >Previous</div>
-                    <div className='border border-[#787878] cursor-pointer text-black dark:text-white dark:border-white rounded-[7px] p-[10px]'>Next</div>
-                </div>
-            </div>
 
         </div>
     )
