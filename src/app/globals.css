@@ -138,3 +138,36 @@
     transform-origin: 50% 50%;
   }
 }
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  /* Width of the vertical scrollbar */
+  height: 3px;
+  /* Height of the horizontal scrollbar */
+}
+
+/* Style the track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light grey background for the track */
+  border-radius: 10px;
+}
+
+/* Style the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #bcbcbc;
+  /* Darker grey for the thumb */
+  border-radius: 10px;
+}
+
+/* Style the thumb on hover (when the user hovers over the scrollbar) */
+::-webkit-scrollbar-thumb:hover {
+  background: #9b9b9b;
+  /* Even darker grey when hovering */
+}
+
+/* Style the corner (where horizontal and vertical scrollbars meet) */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}

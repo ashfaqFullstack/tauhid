@@ -35,7 +35,7 @@ const chartConfig = {
 
 export function ChartProgress() {
     return (
-        <Card>
+        <Card className='shadow-none' >
             <CardHeader>
                 <div className="flex justify-between flex-wrap mb-[36px] gap-[20px]">
                     <div className="flex gap-[9px]">

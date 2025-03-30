@@ -37,7 +37,7 @@ const Sections = ({ tableview }) => {
         tableview(title)
     }
     return (
-        <div className="flex gap-[20px] overflow-x-auto" >
+        <div className="flex gap-[20px]" >
             {
                 sections.map((item) => {
                     return (

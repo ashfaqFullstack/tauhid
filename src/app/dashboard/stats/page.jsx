@@ -33,7 +33,7 @@ const page = () => {
 
             <div className="grid grid-cols-12 gap-[19px] mt-[30px]">
                 <div className="col-span-12 md:col-span-6 p-[20px] border border-gray-200 rounded-[10px]">
-                    <div className="flex items-center overflow-x-auto gap-[8px] my-[30px]">
+                    <div className="flex items-center overflow-x-auto min-h-[50px] gap-[8px] mb-[30px]">
                         <FilterItem dropdown={false} filter="Date" />
                         <FilterItem dropdown={true} filter="Amount" />
                         <FilterItem dropdown={false} filter="Currency" />

@@ -9,7 +9,7 @@ const MonthSection = () => {
                     <h1 className="font-bold text-2xl">November</h1>
                     <p className="font-medium text-2xl">2023</p>
                 </div>
-                <div className="border-b-2 border-black w-[50%]" ></div>
+                <div className="border-b-2 border-[#494949] w-[50%] mx-[29px]" ></div>
                 <div className='flex justify-between flex-wrap' >
                     <div className='flex gap-[9px]' >
                         <Button Title="Today" blue={true} />
@@ -18,7 +18,7 @@ const MonthSection = () => {
                 </div>
             </div>
             <div className="flex gap-4 mt-10">
-                <div className="flex flex-col rounded-full bg-[#FF3B30] text-white w-[160px] h-[130px] items-center justify-center text-center">
+                <div className="flex flex-col rounded-full bg-[#FF3B30] text-white w-[160px] h-[120px] lg:h-[130px] items-center justify-center text-center">
                     <p className="text-4xl">WED</p>
                     <p className="text-4xl">10</p>
                 </div>
@@ -29,9 +29,9 @@ const MonthSection = () => {
                             <p className="text-xl font-normal">10:30 PM - 11:30 PM </p>
                             <p className="text-sm font-normal">Duration: 1 hour</p>
                         </div>
-                        <div className="space-y-4">
-                            <p className="text-sm font-normal">Section</p>
-                            <button className="bg-black text-white rounded-md px-4 py-1">LR</button>
+                        <div className="mt-4">
+                            <p className="text-sm text-[#494949] font-normal">Section</p>
+                            <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                         </div>
                         <div>
                             <Image src={WatchButtons} />
@@ -44,9 +44,9 @@ const MonthSection = () => {
                             <p className="text-xl font-normal">10:30 PM - 11:30 PM </p>
                             <p className="text-sm font-normal">Duration: 1 hour</p>
                         </div>
-                        <div className="space-y-4">
-                            <p className="text-sm font-normal">Section</p>
-                            <button className="bg-black text-white rounded-md px-4 py-1">LR</button>
+                        <div className="mt-4">
+                            <p className="text-sm text-[#494949] font-normal">Section</p>
+                            <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                         </div>
                         <div>
                             <Image src={WatchButtons} />
@@ -67,9 +67,9 @@ const MonthSection = () => {
                         <p className="text-xl font-normal">10:30 PM - 11:30 PM </p>
                         <p className="text-sm font-normal">Duration: 1 hour</p>
                     </div>
-                    <div className="space-y-4">
-                        <p className="text-sm font-normal">Section</p>
-                        <button className="bg-black text-white rounded-md px-4 py-1">LR</button>
+                    <div className="mt-4">
+                        <p className="text-sm text-[#494949] font-normal">Section</p>
+                        <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                     </div>
                     <div>
                         <Image src={WatchButtons} />
