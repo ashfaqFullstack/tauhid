@@ -10,7 +10,7 @@ const FilterDialog = ({ dropdown }) => {
     return (
         <Dialog>
             <DialogTrigger>
-                <CirclePlus className={`cursor-pointer text-[#787878] transform pr-[4px] ${dropdown ? "rotate-45 translate-[2px]" : "translate-[1px] "} `} size={18} />
+                <CirclePlus className={`cursor-pointer text-[#787878] transform pr-[4px] ${dropdown ? "rotate-45 translate-[2px]" : "md:translate-[1px]"} `} size={18} />
             </DialogTrigger>
             <DialogContent className='border-[1px]  border-gray-300 w-full md:w-[298px]' >
                 <div className="text-[20px] font-semibold" >Filter by Status</div>

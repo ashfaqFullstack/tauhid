@@ -130,3 +130,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer components {
+  circle {
+    transition: stroke-dashoffset 0.35s;
+    transform-origin: 50% 50%;
+  }
+}

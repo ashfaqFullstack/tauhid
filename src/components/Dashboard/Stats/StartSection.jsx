@@ -2,6 +2,7 @@ import IconButton from "@/components/Buttons/IconButton"
 import Slider from '@/assets/icons/Filter-Icon.svg'
 import Calendar from '@/assets/icons/Calendar-Icon.svg'
 import CalendarCheck from '@/assets/icons/Calendar-check.svg'
+import { ModeToggle } from "@/components/Buttons/ModeToggle"
 
 const StartSection = () => {
     return (
@@ -11,6 +12,10 @@ const StartSection = () => {
                 <IconButton title="Full Test" />
                 <IconButton source={Calendar} title="Section" />
                 <IconButton title="Start Drilling" />
+            </div>
+            <ModeToggle />
+            <div className="mt-[40px] md:mt-[48px]" >
+                
             </div>
         </div>
     )
