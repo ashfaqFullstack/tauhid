@@ -1,30 +1,38 @@
+"use client"
+
 import FilterItem from '@/components/Dashboard/Calendar/FilterItem'
 import MonthSection from '@/components/Dashboard/Calendar/MonthSection'
+import Question from '@/components/Dashboard/Calendar/Question'
 import Sections from '@/components/Dashboard/Calendar/Sections'
 import Table from '@/components/Dashboard/Calendar/Table'
 import HeaderDashboard from '@/components/Dashboard/Header/HeaderDashbaord'
 import { ChartProgress } from '@/components/Dashboard/Stats/chart-prgress'
 import Progress from '@/components/Dashboard/Stats/Progress'
 import StartSection from '@/components/Dashboard/Stats/StartSection'
+import { useState } from 'react'
 
 const page = () => {
+    const [table, setTable] = useState("Sections")
+    const tableView = (table) => {
+        setTable(table)
+    }
     return (
-        <div>
+        <div className='mb-[30px]' >
             <HeaderDashboard Title={"Saad"} />
             <div className='relative' >
                 <StartSection />
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-12 gap-[19px] mt-[30px]'>
-                <div className=' col-span-12 sm:col-span-6 min-w-[631px] md:min-w-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-12 gap-[19px] mt-[30px]'>
+                <div className=' col-span-12 md:col-span-6 min-w-[631px] md:min-w-auto'>
                     <ChartProgress />
                 </div>
-                <div className='col-span-12 sm:col-span-6 min-w-[631px] md:min-w-auto'>
+                <div className='col-span-12 md:col-span-6 min-w-[631px] md:min-w-auto'>
                     <Progress />
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[19px] mt-[30px]">
-                <div className="p-[20px] border border-gray-200 rounded-[10px]">
+            <div className="grid grid-cols-12 gap-[19px] mt-[30px]">
+                <div className="col-span-12 md:col-span-6 p-[20px] border border-gray-200 rounded-[10px]">
                     <div className="flex items-center overflow-x-auto gap-[8px] my-[30px]">
                         <FilterItem dropdown={false} filter="Date" />
                         <FilterItem dropdown={true} filter="Amount" />
@@ -33,15 +41,16 @@ const page = () => {
                         <FilterItem dropdown={false} filter="Status" />
                     </div>
                     <div className="my-[30px] flex gap-[20px] overflow-x-auto">
-                        <Sections />
+                        <Sections tableview={tableView} />
                     </div>
                     <div className="overflow-x-auto">
-                        <Table />
+                        {table === "Sections" && <Table />}
+                        {table === "Questions" && <Question />}
                     </div>
                 </div>
 
                 {/* Second Section with MonthSection */}
-                <div className="p-[20px] border border-gray-200 rounded-[10px]">
+                <div className="col-span-12 md:col-span-6 p-[20px] border border-gray-200 rounded-[10px]">
                     <MonthSection />
                 </div>
             </div>

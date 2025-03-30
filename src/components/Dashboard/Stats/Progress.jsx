@@ -9,7 +9,7 @@ const Progress = () => {
     return (
         <div className='border border-gray-200 rounded-[10px] p-[20px] ' >
             {/* Top buttons */}
-            <div className='flex justify-between flex-wrap mb-[36px]' >
+            <div className='flex justify-between flex-wrap mb-[36px] gap-[20px]' >
                 <div className='flex gap-[9px]' >
                     <Button Title="All" blue={true} />
                     <Button Title="1 Month" blue={false} />
@@ -83,8 +83,8 @@ const Progress = () => {
                         strokeWidth={13}
                     />
                 </div>
-                <div className='border border-gray-200 rounded-[10px]  ' >
-                    <Image src={MeterBar} className='h-full mx-[37px]' alt='img' />
+                <div className='border border-gray-200 rounded-[10px] p-[37px] ' >
+                    <Image src={MeterBar} className='h-full' alt='img' />
                 </div>
 
             </div> */}

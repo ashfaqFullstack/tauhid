@@ -29,11 +29,12 @@ const sections = [
     },
 
 ]
-const Sections = () => {
+const Sections = ({ tableview }) => {
     const [active, setActive] = useState("Sections")
 
     const handleClick = (title) => {
         setActive(title)
+        tableview(title)
     }
     return (
         <div className="flex gap-[20px] overflow-x-auto" >

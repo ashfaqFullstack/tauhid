@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import { Progress } from "@/components/ui/progress"
 import { CirclePlay, Check, Bookmark, FileText, MessageCircleMore, RotateCcw, Trash2, Book } from 'lucide-react'
 import Reading from "@/assets/icons/Reading.svg"

@@ -11,10 +11,6 @@ const StartSection = () => {
                 <IconButton source={Calendar} title="Section" />
                 <IconButton title="Start Drilling" />
             </div>
-            <ModeToggle />
-            <div className="mt-[40px] md:mt-[48px]" >
-                
-            </div>
         </div>
     )
 }

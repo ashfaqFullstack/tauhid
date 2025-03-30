@@ -1,11 +1,18 @@
+"use client"
 import FilterItem from '@/components/Dashboard/Calendar/FilterItem'
+import Question from '@/components/Dashboard/Calendar/Question'
 import Sections from '@/components/Dashboard/Calendar/Sections'
 import StartNewSection from '@/components/Dashboard/Calendar/StartNewSection'
 import Table from '@/components/Dashboard/Calendar/Table'
 import Header from "@/components/Dashboard/Header/Header";
+import { useState } from 'react';
 
 
 const page = () => {
+    const [table, setTable] = useState("Sections")
+    const tableView = (table) => {
+        setTable(table)
+    }
     return (
         <div>
             <Header Title="Saad" />
@@ -21,18 +28,24 @@ const page = () => {
                 </div>
             </div>
             <div className='my-[30px] flex gap-[20px] overflow-x-auto' >
-                <Sections />
+                <Sections tableview={tableView} />
             </div>
             <div className='overflow-x-auto ' >
 
-                <Table />
-                <div className='px-[40px] py-[22px] flex items-center justify-between ' >
-                    <div className='text-[#787878] dark:text-white' >Viewing 1-20 of 90 results</div>
-                    <div className='flex items-center gap-[13px]' >
-                        <div className='border border-[#D9DEE4] cursor-pointer text-[#D9DEE4] dark:border-[#787878] dark:text-[#787878] rounded-[7px] p-[10px]' >Previous</div>
-                        <div className='border border-[#787878] cursor-pointer text-black dark:text-white dark:border-white rounded-[7px] p-[10px]'>Next</div>
-                    </div>
-                </div>
+                {/* <div className=""> */}
+                {table === "Sections" && <Table />}
+                {table === "Questions" && <Question />}
+                {/* </div> */}
+                {
+                    table == "All" ?
+                        <div className='px-[40px] py-[22px] flex items-center justify-between ' >
+                            <div className='text-[#787878] dark:text-white' >Viewing 1-20 of 90 results</div>
+                            <div className='flex items-center gap-[13px]' >
+                                <div className='border border-[#D9DEE4] cursor-pointer text-[#D9DEE4] dark:border-[#787878] dark:text-[#787878] rounded-[7px] p-[10px]' >Previous</div>
+                                <div className='border border-[#787878] cursor-pointer text-black dark:text-white dark:border-white rounded-[7px] p-[10px]'>Next</div>
+                            </div>
+                        </div> : null
+                }
             </div>
         </div>
     )

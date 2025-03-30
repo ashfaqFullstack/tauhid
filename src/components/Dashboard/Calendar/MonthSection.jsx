@@ -9,7 +9,7 @@ const MonthSection = () => {
                     <h1 className="font-bold text-2xl">November</h1>
                     <p className="font-medium text-2xl">2023</p>
                 </div>
-                <div>____________________________________________</div>
+                <div className="border-b-2 border-black w-[50%]" ></div>
                 <div className='flex justify-between flex-wrap' >
                     <div className='flex gap-[9px]' >
                         <Button Title="Today" blue={true} />

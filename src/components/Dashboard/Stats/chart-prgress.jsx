@@ -17,7 +17,7 @@ import Button from "./Button"
 // Chart data with progress values
 const chartData = [
     { month: "Ass", progres: 42, backgorund: "red" },
-    { month: "Con", progres: 0 , backgorund: 'greem' },
+    { month: "Con", progres: 0, backgorund: 'greem' },
     { month: "Pri", progres: 70, backgorund: 'yellow' },
     { month: "Par", progres: 41, backgorund: 'orange' },
     { month: "Fla", progres: 60, backgorund: 'red' },
@@ -37,7 +37,7 @@ export function ChartProgress() {
     return (
         <Card>
             <CardHeader>
-                <div className="flex justify-between flex-wrap mb-[36px]">
+                <div className="flex justify-between flex-wrap mb-[36px] gap-[20px]">
                     <div className="flex gap-[9px]">
                         <Button Title="All" blue={true} />
                         <Button Title="1 Month" blue={false} />
@@ -58,7 +58,7 @@ export function ChartProgress() {
                         margin={{
                             top: 20,
                         }}
-                      
+
                         height={300} // Fixed height of the chart
                     >
                         <CartesianGrid vertical={false} />
