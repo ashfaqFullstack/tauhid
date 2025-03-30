@@ -5,6 +5,7 @@ import MonthSection from '@/components/Dashboard/Calendar/MonthSection'
 import Question from '@/components/Dashboard/Calendar/Question'
 import Sections from '@/components/Dashboard/Calendar/Sections'
 import Table from '@/components/Dashboard/Calendar/Table'
+import Tests from '@/components/Dashboard/Calendar/Test'
 import HeaderDashboard from '@/components/Dashboard/Header/HeaderDashbaord'
 import { ChartProgress } from '@/components/Dashboard/Stats/chart-prgress'
 import Progress from '@/components/Dashboard/Stats/Progress'
@@ -46,6 +47,7 @@ const page = () => {
                     <div className="overflow-x-auto">
                         {table === "Sections" && <Table />}
                         {table === "Questions" && <Question />}
+                        {table === "Tests" && <Tests />}
                     </div>
                 </div>
 

@@ -4,6 +4,7 @@ import Question from '@/components/Dashboard/Calendar/Question'
 import Sections from '@/components/Dashboard/Calendar/Sections'
 import StartNewSection from '@/components/Dashboard/Calendar/StartNewSection'
 import Table from '@/components/Dashboard/Calendar/Table'
+import Tests from '@/components/Dashboard/Calendar/Test'
 import Header from "@/components/Dashboard/Header/Header";
 import { useState } from 'react';
 
@@ -35,6 +36,7 @@ const page = () => {
                 {/* <div className=""> */}
                 {table === "Sections" && <Table />}
                 {table === "Questions" && <Question />}
+                {table === "Tests" && <Tests />}
                 {/* </div> */}
                 {
                     table == "All" ?
