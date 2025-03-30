@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 
 export const CircularProgress = ({
     percentage,
-    title,
     size = 120,
     strokeWidth = 8,
     className,

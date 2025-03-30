@@ -1,7 +1,5 @@
 import IconButton from "@/components/Buttons/IconButton"
-import Slider from '@/assets/icons/Filter-Icon.svg'
 import Calendar from '@/assets/icons/Calendar-Icon.svg'
-import CalendarCheck from '@/assets/icons/Calendar-check.svg'
 import { ModeToggle } from "@/components/Buttons/ModeToggle"
 
 const StartSection = () => {
