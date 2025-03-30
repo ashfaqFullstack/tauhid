@@ -2,10 +2,12 @@ import FilterItem from '@/components/Dashboard/Calendar/FilterItem'
 import Sections from '@/components/Dashboard/Calendar/Sections'
 import StartNewSection from '@/components/Dashboard/Calendar/StartNewSection'
 import Table from '@/components/Dashboard/Calendar/Table'
+import Header from '@/components/Dashboard/Header/Header'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-[30px]' >
+      <Header Title="Saad" />
       <StartNewSection />
       <div className='flex items-center flex-wrap gap-[8px] my-[30px]' >
         <FilterItem dropdown={false} filter="Date & Time" />
