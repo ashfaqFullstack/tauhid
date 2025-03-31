@@ -24,10 +24,10 @@ const page = () => {
                 <StartSection />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-12 gap-[19px] mt-[30px]'>
-                <div className='col-span-12 md:col-span-6 min-w-[631px] md:min-w-auto'>
+                <div className='col-span-12 md:col-span-6 md:min-w-auto overflow-x-auto'>
                     <Progress />
                 </div>
-                <div className=' col-span-12 md:col-span-6 min-w-[631px] md:min-w-auto'>
+                <div className=' col-span-12 md:col-span-6 md:min-w-auto overflow-x-auto'>
                     <ChartProgress />
                 </div>
             </div>

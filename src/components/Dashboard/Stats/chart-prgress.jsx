@@ -35,7 +35,7 @@ const chartConfig = {
 
 export function ChartProgress() {
     return (
-        <Card className='shadow-none dark:border-white' >
+        <Card className='shadow-none dark:border-white overflow-x-auto' >
             <CardHeader>
                 <div className="flex justify-between flex-wrap mb-[36px] gap-[20px]">
                     <div className="flex gap-[9px]">
@@ -51,7 +51,7 @@ export function ChartProgress() {
                 </div>
             </CardHeader>
             <CardContent>
-                <ChartContainer config={chartConfig} className="w-full h-[300px]">
+                <ChartContainer config={chartConfig} className="w-auto h-[300px]">
                     <BarChart
                         accessibilityLayer
                         data={chartData}

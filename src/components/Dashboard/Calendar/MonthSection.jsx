@@ -19,13 +19,13 @@ const MonthSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-4 mt-10">
-                <div className="flex flex-col rounded-full bg-[#FF3B30] text-white w-[160px] h-[120px] md:h-[100px] lg:h-[130px] items-center justify-center text-center">
+            <div className="flex flex-col md:flex-row gap-4 mt-10">
+                <div className="flex flex-col rounded-full bg-[#FF3B30] text-white w-[120px] md:w-[160px] h-[120px] md:h-[100px] lg:h-[125px] items-center justify-center text-center">
                     <p className="text-[18px] mb-[-15px]">WED</p>
                     <p className="text-[48px] mt-[-2px]">10</p>
                 </div>
                 <div className=" w-full border dark:border-white p-4 rounded-lg space-y-4">
-                    <div className="flex justify-between ">
+                    <div className="flex flex-col lg:flex-row lg:justify-between gap-[15px] lg:gap-[37px]">
                         <div className="flex-col">
                             <h1 className="text-lg font-medium">Lecture: Game of the day</h1>
                             <p className="text-xl font-normal">10:30 PM - 11:30 PM </p>
@@ -46,7 +46,7 @@ const MonthSection = () => {
                         </div>
                     </div>
                     <div className="border dark:border-white"></div>
-                    <div className="flex justify-between">
+                    <div className="flex  flex-col lg:flex-row lg:justify-between gap-[15px] lg:gap-[37px]">
                         <div className="flex-col">
                             <h1 className="text-lg font-medium">Lecture: Game of the day</h1>
                             <p className="text-xl font-normal">10:30 PM - 11:30 PM </p>
@@ -70,12 +70,12 @@ const MonthSection = () => {
                 </div>
             </div>
             <div
-                className="flex gap-4 mt-10">
+                className="flex flex-col md:flex-row gap-4 mt-10">
                 <div className="flex flex-col rounded-lg border dark:border-white p-6 items-center justify-center text-center">
                     <p className="text-4xl text-orange-600">WED</p>
                     <p className="text-4xl text-black dark:text-white">12</p>
                 </div>
-                <div className="border dark:border-white w-full flex p-4 justify-between rounded-lg">
+                <div className="border dark:border-white w-full flex p-4 gap-[15px] lg:gap-[37px]  flex-col lg:flex-row lg:justify-between rounded-lg">
                     <div className="flex-col">
                         <h1 className="text-lg font-medium">Lecture: Game of the day</h1>
                         <p className="text-xl font-normal">10:30 PM - 11:30 PM </p>

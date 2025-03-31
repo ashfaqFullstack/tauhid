@@ -54,7 +54,6 @@ const FlaggedQuestions = () => {
                     </div>
                     <div className="flex justify-center">
                         <CircularProgressBar data={data} />
-                        {/* <Image src={flaggedCircle} alt="" className="mt-7" /> */}
                     </div>
                 </div>
             </div>
