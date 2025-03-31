@@ -36,15 +36,15 @@ const PracticeExame = () => {
                 <div className="w-full sm:w-[calc(50%-10px)] flex flex-col gap-6">
                     <div className="flex justify-between dark:text-white w-full gap-5">
                         <p className="flex gap-2 dark:text-white">Correct <span className="font-bold text-lg">75</span></p>
-                        <ProgressHome progress={75} />
+                        <ProgressHome color="bg-green-500" progress={85} />
                     </div>
                     <div className="flex justify-between dark:text-white w-full gap-5">
                         <p className="flex gap-2">Correct <span className="font-bold text-lg">75</span></p>
-                        <ProgressHome progress={20} />
+                        <ProgressHome color="bg-red-300" progress={40} />
                     </div>
                     <div className="flex justify-between dark:text-white w-full gap-5">
                         <p className="flex gap-2">Correct <span className="font-bold text-lg">75</span></p>
-                        <ProgressHome progress={9} />
+                        <ProgressHome color="bg-gray-300" progress={20} />
                     </div>
                 </div>
             </div>

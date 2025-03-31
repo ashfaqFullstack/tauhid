@@ -10,6 +10,7 @@ import ByDifficulty from "@/components/Homepage/Bydifficulty/ByDifficulty";
 import ByFamily from "@/components/Homepage/ByFamily/ByFamily";
 import FlaggedQuestions from "@/components/Homepage/flagedQestion/flagedQuestion";
 import PracticeExame from "@/components/Homepage/PracticeExam/practiveExame";
+import ServicesCards from "@/components/Homepage/ServicesCards/ServicesCards";
 import { useState } from "react";
 
 const page = () => {
@@ -17,20 +18,44 @@ const page = () => {
     const tableView = (table) => {
         setTable(table)
     }
+    const [activeCard, setActiveCard] = useState(2);
+
+    const services = [
+        { id: 1, title: "Reading Comprehension" },
+        { id: 2, title: "Reading Comprehension" },
+        { id: 3, title: "Reading Comprehension" },
+        { id: 4, title: "Reading Comprehension" }
+    ];
+
     return (
-        <div>
-            <HeaderDashboard Title={"Saad"} />
-            <div className='relative' >
-                <StartSection />
+        <div className="" >
+            <div className="mx-[2%] md:mx-[5%] xl:mx-[8%] mt-[20px] md:mt-[30px] lg:mt-[60px]" >
+                <HeaderDashboard Title={"Saad"} />
+                <div className='relative' >
+                    <StartSection />
+                </div>
+
+                <div className="mt-10">
+                    <PracticeExame />
+                </div>
             </div>
 
-            <div className="mt-10">
-                <PracticeExame />
+            {/* Service Cards */}
+            <div className=" my-[70px] ml-[50px] flex overflow-x-auto">
+                {services.map((service) => (
+                    <ServicesCards
+                        key={service.id}
+                        id={service.id}
+                        title={service.title}
+                        activeCard={activeCard}
+                        setActiveCard={setActiveCard}
+                    />
+                ))}
             </div>
 
             {/* Tables */}
 
-            <div>
+            <div className="mx-[2%] md:mx-[5%] xl:mx-[8%] mt-[20px] md:mt-[30px] lg:mt-[60px]" >
                 <div className='flex items-center flex-wrap gap-[8px] my-[30px]' >
                     <FilterItem dropdown={false} filter="Date & Time" />
                     <FilterItem dropdown={true} filter="Amount" />
@@ -60,16 +85,20 @@ const page = () => {
                 </div>
             </div>
 
-            <div>
-                <ByDifficulty />
-            </div>
-            <div className="mt-10">
-                <ByFamily />
-            </div>
-            <div className="mt-10 mb-20">
-                <FlaggedQuestions />
+            <div className="mx-[2%] md:mx-[5%] xl:mx-[8%] mt-[20px] md:mt-[30px] lg:mt-[60px]" >
+
+                <div>
+                    <ByDifficulty />
+                </div>
+                <div className="mt-10">
+                    <ByFamily />
+                </div>
+                <div className="mt-10 mb-20">
+                    <FlaggedQuestions />
+                </div>
             </div>
         </div>
+
     )
 }
 export default page;

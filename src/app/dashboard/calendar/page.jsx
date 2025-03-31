@@ -15,7 +15,7 @@ const page = () => {
         setTable(table)
     }
     return (
-        <div>
+        <div className='mx-[2%] md:mx-[5%] xl:mx-[8%] mt-[20px] md:mt-[30px] lg:mt-[60px]' >
             <Header Title="Saad" />
             <StartNewSection />
             <div className='flex items-center flex-wrap gap-[8px] my-[30px]' >

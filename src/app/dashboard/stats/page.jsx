@@ -18,7 +18,7 @@ const page = () => {
         setTable(table)
     }
     return (
-        <div className='mb-[30px]' >
+        <div className='mb-[30px] mx-[2%] md:mx-[5%] xl:mx-[8%] mt-[20px] md:mt-[30px] lg:mt-[60px] ' >
             <HeaderDashboard Title={"Saad"} />
             <div className='relative' >
                 <StartSection />
