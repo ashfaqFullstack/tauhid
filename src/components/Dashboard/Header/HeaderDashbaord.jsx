@@ -7,8 +7,8 @@ const HeaderDashboard = ({ Title }) => {
     return (
         <div className='flex justify-between ' >
             {/* title of the header //**username**\\ */}
-            <div className='text-bold text-[38px] md:text-[48px] lg:text-[54px] flex relative w-fit h-fit' >
-                <div className='h-fit w-fit leading-[44px]' >
+            <div className='font-bold text-[38px] md:text-[48px] lg:text-[54px] flex relative w-fit h-fit' >
+                <div className='h-fit font-bold w-fit leading-[44px]' >
                     Hi {Title}
                 </div>
                 <div className='lg:w-[11px] w-[12px] h-[12px] bg-btn rounded-full absolute bottom-1 md:bottom-0 right-[-11px] sm:right-[-12px] '></div>
