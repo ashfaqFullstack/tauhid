@@ -4,7 +4,7 @@ import QuestionItem from './QuetionItem'
 const Question = () => {
     return (
         <div className='my-[30px] min-w-[1200px]' >
-            <div className='flex px-[10px]  py-[12px] text-[#494949] dark:text-white font-semibold border-y-[1px] border-[#D9DEE4]' >
+            <div className='flex justify-between px-[10px] py-[12px] text-[#494949] dark:text-white font-semibold border-y-[1px] border-[#D9DEE4]' >
                 <div className='w-[291px] mr-[35px]' >Title</div>
                 <div className='w-[74px] mx-[25px] ' >Question</div>
                 <div className='w-[147px] mx-[25px] ' >Type - Subtype</div>

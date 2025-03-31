@@ -10,7 +10,7 @@ import QuestionButton from '@/components/Buttons/QuestionButton'
 const QuestionItem = ({ reading, status }) => {
     const safeValue = 3;
     return (
-        <div className='flex items-center gap-[37px] px-[10px] py-[12px] text-[#494949] dark:text-white border-t-[1px] border-[#D9DEE4]' >
+        <div className='flex items-center justify-between gap-[37px] px-[10px] py-[12px] text-[#494949] dark:text-white border-t-[1px] border-[#D9DEE4]' >
             <div className='min-w-[291px] flex items-center gap-[4px]' >
                 Lorem ipsum Title Sample
                 {status == 'Correct' && <QuestionButton title={status} text="#3A6E1F" bgColor="#D9F8BA" border="#B8EE81" />}
@@ -21,11 +21,11 @@ const QuestionItem = ({ reading, status }) => {
                 }
                 {status == 'Skipped' && <QuestionButton title={status} text="#5B6170" bgColor="#ECEEF1" border="#D9DEE4" />}
             </div>
-            <div className='min-w-[74px] flex items-center gap-[1px]' >
+            <div className='min-w-[74px] flex items-center gap-[1px] relative' >
                 Q13 77.2
                 {
                     !reading &&
-                    <Image src={Flag} alt="Flag" />
+                    <Image src={Flag} className="absolute right-[-5px]" alt="Flag" />
                 }
             </div>
             <div className='min-w-[147px]' >
@@ -46,7 +46,7 @@ const QuestionItem = ({ reading, status }) => {
                 {[...Array(5)].map((_, index) => (
                     <div
                         key={index}
-                        className={`w-4 h-4 rounded-full border border-black ${index < safeValue ? 'bg-black dark:bg-white' : 'bg-transparent'
+                        className={`w-[14px] h-[14px] rounded-full border border-black ${index < safeValue ? 'bg-black dark:bg-white' : 'bg-transparent'
                             }`}
                         aria-label={`Circle ${index + 1}${index < safeValue ? ' (filled)' : ''}`}
                     />
