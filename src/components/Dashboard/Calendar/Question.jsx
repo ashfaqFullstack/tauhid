@@ -4,15 +4,15 @@ import QuestionItem from './QuetionItem'
 const Question = () => {
     return (
         <div className='my-[30px] min-w-[1200px]' >
-            <div className='grid grid-cols-12 px-[10px]  py-[12px] text-[#494949] dark:text-white font-semibold border-y-[1px] border-[#D9DEE4]' >
-                <div className='col-span-3' >Title</div>
-                <div className='col-span-1' >Question</div>
-                <div className='col-span-2' >Type - Subtype</div>
-                <div className='col-span-1' >Difficulty</div>
-                <div className='col-span-2' >Tags</div>
-                <div className='col-span-1' >Timing</div>
-                <div className='col-span-1' >Date</div>
-                <div className='col-span-1' >Actions</div>
+            <div className='flex px-[10px]  py-[12px] text-[#494949] dark:text-white font-semibold border-y-[1px] border-[#D9DEE4]' >
+                <div className='w-[291px] mr-[35px]' >Title</div>
+                <div className='w-[74px] mx-[25px] ' >Question</div>
+                <div className='w-[147px] mx-[25px] ' >Type - Subtype</div>
+                <div className='w-[74px] mx-[25px] ' >Difficulty</div>
+                <div className='w-[120px] mx-[25px] ' >Tags</div>
+                <div className='w-[74px] mx-[25px] ' >Timing</div>
+                <div className='w-[100px] mx-[25px] ' >Date</div>
+                <div className='w-[160px] mx-[25px] ' >Actions</div>
             </div>
 
             <div className='relative' >

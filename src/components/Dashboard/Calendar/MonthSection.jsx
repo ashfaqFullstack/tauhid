@@ -20,9 +20,9 @@ const MonthSection = () => {
                 </div>
             </div>
             <div className="flex gap-4 mt-10">
-                <div className="flex flex-col rounded-full bg-[#FF3B30] text-white w-[160px] h-[120px] lg:h-[130px] items-center justify-center text-center">
-                    <p className="text-4xl">WED</p>
-                    <p className="text-4xl">10</p>
+                <div className="flex flex-col rounded-full bg-[#FF3B30] text-white w-[160px] h-[120px] md:h-[100px] lg:h-[130px] items-center justify-center text-center">
+                    <p className="text-[18px] mb-[-15px]">WED</p>
+                    <p className="text-[48px] mt-[-2px]">10</p>
                 </div>
                 <div className=" w-full border dark:border-white p-4 rounded-lg space-y-4">
                     <div className="flex justify-between ">

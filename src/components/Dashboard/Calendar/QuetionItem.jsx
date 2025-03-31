@@ -10,21 +10,25 @@ import QuestionButton from '@/components/Buttons/QuestionButton'
 const QuestionItem = ({ reading, status }) => {
     const safeValue = 3;
     return (
-        <div className='grid grid-cols-12 px-[10px] py-[12px] text-[#494949] dark:text-white border-t-[1px] border-[#D9DEE4]' >
-            <div className='col-span-3 flex items-center gap-[4px]' >
+        <div className='flex items-center gap-[37px] px-[10px] py-[12px] text-[#494949] dark:text-white border-t-[1px] border-[#D9DEE4]' >
+            <div className='min-w-[291px] flex items-center gap-[4px]' >
                 Lorem ipsum Title Sample
                 {status == 'Correct' && <QuestionButton title={status} text="#3A6E1F" bgColor="#D9F8BA" border="#B8EE81" />}
-                {status == 'Missed' && <QuestionButton title={status} text="#B12B40" bgColor="#FAEAEE" border="#F5D5DC" />}
+                {status == 'Missed' &&
+                    <div className={`flex text-[11px] font-semibold items-center dark:text-[#B12B40] text-[#B12B40] gap-[5px] border-[#F5D5DC] w-fit px-[9] py-[4px] rounded-[5.2px] border bg-[#FAEAEE]`} >
+                        Missed
+                    </div>
+                }
                 {status == 'Skipped' && <QuestionButton title={status} text="#5B6170" bgColor="#ECEEF1" border="#D9DEE4" />}
             </div>
-            <div className='col-span-1 flex items-center gap-[4px]' >
+            <div className='min-w-[74px] flex items-center gap-[1px]' >
                 Q13 77.2
                 {
                     !reading &&
-                    <Image src={Flag} alt="Flag" width={16} height={16} />
+                    <Image src={Flag} alt="Flag" />
                 }
             </div>
-            <div className='col-span-2' >
+            <div className='min-w-[147px]' >
                 {
                     reading ?
                         <div className='flex items-center text-[#424551] dark:text-white gap-[8px]' >
@@ -34,11 +38,11 @@ const QuestionItem = ({ reading, status }) => {
                         :
                         <div className='flex items-center text-[#424551] dark:text-white gap-[8px]' >
                             <Image src={Reasoning} alt="reasoning" width={20} height={20} />
-                            lorem - ipsum
+                            Dummy
                         </div>
                 }
             </div>
-            <div className="flex items-center gap-[2px] col-span-1">
+            <div className="flex items-center gap-[2px] min-w-[74px]">
                 {[...Array(5)].map((_, index) => (
                     <div
                         key={index}
@@ -48,13 +52,13 @@ const QuestionItem = ({ reading, status }) => {
                     />
                 ))}
             </div>
-            <div className='col-span-2 flex items-center gap-[8px]' >
+            <div className='min-w-[120px] flex items-center gap-[8px]' >
                 <QuestionButton title="Lorem" text="#5B6170" bgColor="#ECEEF1" border="#D9DEE4" />
                 <QuestionButton title="ipsum" text="#5B6170" bgColor="#ECEEF1" border="#D9DEE4" />
             </div>
-            <div className='col-span-1' >02h 45m/35m</div>
-            <div className='col-span-1' >Apr 25, 2023</div>
-            <div className='col-span-1 flex items-center' >
+            <div className='min-w-[74px]' >02m 45s</div>
+            <div className='min-w-[100px]' >Apr 25, 2023</div>
+            <div className='min-w-[160px] flex items-center' >
                 <div className='flex items-center gap-[9px]' >
                     <Image src={RIcon} alt="edit" width={16} height={16} />
                     <Bookmark size={16} className='text-[#494949] dark:text-white' />

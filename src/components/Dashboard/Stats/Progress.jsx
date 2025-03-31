@@ -2,9 +2,10 @@ import Image from 'next/image';
 import Button from './Button';
 import { CircularProgress } from './CircleProgress';
 import MeterBar from '@/assets/icons/MeterBar.svg'
-import TimeStart from '@/assets/icons/time-start.svg'
+import TimeStart from '@/assets/icons/TimeBar.svg'
 import CenterProgress from '@/assets/icons/progress-img.svg'
 import CirclePRogress from '@/assets/icons/circle-progress.svg'
+import { RCprogress } from './RCprogress';
 const Progress = () => {
     return (
         <div className='border border-gray-200 rounded-[10px] p-[20px] ' >
@@ -33,7 +34,7 @@ const Progress = () => {
                         size={120}
                         bgColor=""
                         color="stroke-[#0866FF]"
-                        strokeWidth={13}
+                        strokeWidth={9}
                     />
                 </div>
                 <div className="border border-gray-200 rounded-[10px] w-full h-[150px] flex items-center justify-center">
@@ -43,20 +44,28 @@ const Progress = () => {
                         size={120}
                         bgColor=""
                         color="stroke-[#0866FF]"
-                        strokeWidth={13}
+                        strokeWidth={9}
                     />
                 </div>
-                <div className="border border-gray-200 rounded-[10px] w-full h-[150px] flex items-center justify-center">
-                    <Image src={MeterBar} className="h-full mx-[37px]" alt="img" />
+                <div className="border border-gray-200 rounded-[10px] px-[66px] py-[10px] w-full h-full flex items-center justify-center">
+                    <Image src={MeterBar} className="w-full p-[16px]" alt="img" />
                 </div>
-                <div className="rounded-[10px] w-full h-[150px] flex items-center justify-center">
-                    <Image src={TimeStart} className="" alt="img" />
+                <div className="rounded-[10px] w-full h-full  border  flex flex-col items-center justify-center">
+                    <div className='text-center text-[26px] pt-[24px] font-semibold text-[#0866FF]' >2:45</div>
+                    <Image src={TimeStart} className="w-full" alt="img" />
                 </div>
-                <div className="border border-gray-200 rounded-[10px] w-full h-[150px] flex items-center justify-center">
-                    <Image src={CenterProgress} className="h-full mx-[37px]" alt="img" />
+                <div className="border border-gray-200 rounded-[10px]  flex items-center justify-center">
+                    <RCprogress
+                        percentage={65}
+                        title="Progress"
+                        size={140}
+                        bgColor=""
+                        color="stroke-[#0866FF]"
+                        strokeWidth={10}
+                    />
                 </div>
-                <div className="border border-gray-200 rounded-[10px] w-full h-[150px] flex items-center justify-center">
-                    <Image src={CirclePRogress} className="h-full mx-[37px]" alt="img" />
+                <div className="border border-gray-200 rounded-[10px] w-full h-full px-[66px] py-[10px] flex items-center justify-center">
+                    <Image src={CirclePRogress} className="w-full mx-[10px]" alt="img" />
                 </div>
             </div>
 
