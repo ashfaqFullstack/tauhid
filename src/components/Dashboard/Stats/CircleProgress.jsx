@@ -14,7 +14,7 @@ export const CircularProgress = ({
     const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
     return (
-        <div className={cn("relative inline-flex items-center justify-center", className)}>
+        <div className={cn("relative  inline-flex items-center justify-center", className)}>
             <svg
                 width={size}
                 height={size}

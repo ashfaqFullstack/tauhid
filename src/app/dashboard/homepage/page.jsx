@@ -90,10 +90,10 @@ const page = () => {
                 <div>
                     <ByDifficulty />
                 </div>
-                <div className="mt-10">
+                <div className="mt-[70px]">
                     <ByFamily />
                 </div>
-                <div className="mt-10 mb-20">
+                <div className="mt-[70px]">
                     <FlaggedQuestions />
                 </div>
             </div>
