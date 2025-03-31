@@ -4,8 +4,8 @@ import Bar from './Bar'
 const Implication = () => {
     return (
         <div>
-            <div className="flex flex-col md:flex-row justify-between mt-[40px] ">
-                <p className="text-xl font-bold pr-[40px]">Implications</p>
+            <div className="flex flex-col md:items-center md:flex-row justify-between mt-[40px] ">
+                <p className="text-[24px] font-semibold pr-[40px]">Implications</p>
                 <Bar />
             </div>
             <div className="flex items-start md:items-center flex-col md:flex-row  justify-between my-[10px]">
