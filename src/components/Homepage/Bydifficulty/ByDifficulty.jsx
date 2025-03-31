@@ -3,7 +3,7 @@ import Bar from '../ByFamily/Bar';
 const ByDifficulty = () => {
     return (
         <div>
-            <div className="font-medium text-[34px] mb-[10px] dark:text-white">By Difficulty</div>
+            <div className="font-[500] text-[34px] mb-[10px] dark:text-white">By Difficulty</div>
             <div className="border-b border-black dark:border-white"></div>
 
             <div className="mt-[40px] space-y-[20px]">

@@ -7,7 +7,7 @@ import Implication from "./Implication";
 const ByFamily = () => {
     return (
         <div>
-            <h1 className="font-semibold text-4xl dark:text-white">By Family</h1>
+            <h1 className="font-[500] text-4xl dark:text-white">By Family</h1>
             <div className="border-b border-black dark:border-white mt-4"></div>
             <Implication />
             <Implication />
