@@ -2,7 +2,7 @@ import Bar from '../ByFamily/Bar';
 
 const ByDifficulty = () => {
     return (
-        <div>
+        <div className='mt-[70px]' >
             <div className="font-[500] text-[34px] mb-[10px] dark:text-white">By Difficulty</div>
             <div className="border-b border-black dark:border-white"></div>
 

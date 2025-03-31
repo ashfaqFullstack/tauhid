@@ -41,7 +41,7 @@ const page = () => {
             </div>
 
             {/* Service Cards */}
-            <div className=" my-[70px] ml-[50px] flex overflow-x-auto">
+            <div className=" my-[70px] ml-[10px] md:ml-[50px] flex overflow-x-auto">
                 {services.map((service) => (
                     <ServicesCards
                         key={service.id}

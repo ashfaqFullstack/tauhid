@@ -17,7 +17,7 @@ const FlaggedQuestions = () => {
                 <div className="w-full dark:text-white">
                     <div className="font-medium text-[34px] mb-[10px] dark:text-white">Flagged Questions</div>
                     <div className="border-b border-black dark:border-white"></div>
-                    <div className="my-[30px] flex gap-[30px] items-center">
+                    <div className="my-[30px] flex flex-wrap justify-center md:justify-start gap-[30px] items-center">
                         <div className="flex gap-[12px] items-center" >
                             <div className="w-[22px] h-[22px] bg-[#6ADD95] rounded-full"></div>
                             <p>Correct</p>
@@ -38,7 +38,7 @@ const FlaggedQuestions = () => {
                 <div className="w-full dark:text-white">
                     <h1 className="font-medium text-[34px] mb-[10px] dark:text-white">Flagged Questions</h1>
                     <div className="border-b border-black dark:border-white"></div>
-                    <div className="my-[30px] flex gap-[30px] items-center">
+                    <div className="my-[30px] flex flex-wrap justify-center md:justify-start gap-[30px] items-center">
                         <div className="flex gap-[12px] items-center" >
                             <div className="w-[22px] h-[22px] bg-[#6ADD95] rounded-full"></div>
                             <p>Correct</p>
