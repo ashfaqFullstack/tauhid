@@ -16,8 +16,8 @@ const ProgressHome = ({ progress }) => {
 
     return (
         <div className="relative w-full">
-            <Progress 
-                value={progress} 
+            <Progress
+                value={progress}
                 color={getProgressBarColor(progress)} // Pass dynamic color
                 className="h-[30px] bg-none" // Background of the progress bar (light gray)
             />

@@ -7,10 +7,10 @@ const FlaggedQuestions = () => {
         <>
             <div className="flex flex-col md:flex-row gap-10">
                 {/* Left Column */}
-                <div className="w-full">
-                    <h1 className="font-semibold text-4xl mb-2">Flagged Questions</h1>
-                    <div className="border-b border-black"></div>
-                    <div className="mt-7 flex gap-4 items-center">
+                <div className="w-full dark:text-white">
+                    <h1 className="font-semibold text-[34px] mb-2">Flagged Questions</h1>
+                    <div className="border-b border-black dark:border-white"></div>
+                    <div className="mt-7 flex gap-1 md:gap-4 items-center">
                         <div className="w-[20px] h-[20px] bg-green-500 rounded-full"></div>
                         <p>Correct</p>
                         <div className="w-[20px] h-[20px] bg-gray-400 rounded-full"></div>
@@ -22,10 +22,10 @@ const FlaggedQuestions = () => {
                 </div>
 
                 {/* Right Column */}
-                <div className="w-full">
-                    <h1 className="font-semibold text-4xl mb-2">Flagged Questions</h1>
-                    <div className="border-b border-black"></div>
-                    <div className="mt-7 flex gap-4 items-center">
+                <div className="w-full dark:text-white">
+                    <h1 className="font-semibold text-[34px] dark:text-white mb-2">Flagged Questions</h1>
+                    <div className="border-b border-black dark:border-white"></div>
+                    <div className="mt-7 flex gap-1 md:gap-4 items-center">
                         <div className="w-[20px] h-[20px] bg-green-500 rounded-full"></div>
                         <p>Correct</p>
                         <div className="w-[20px] h-[20px] bg-gray-400 rounded-full"></div>

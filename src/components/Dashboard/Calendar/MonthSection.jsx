@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Button from "../Stats/Button"
 import WatchButtons from "@/assets/icons/watch-button.svg"
+import { Youtube } from "lucide-react"
+
 const MonthSection = () => {
     return (
         <div>
@@ -22,7 +24,7 @@ const MonthSection = () => {
                     <p className="text-4xl">WED</p>
                     <p className="text-4xl">10</p>
                 </div>
-                <div className=" w-full border p-4 rounded-lg space-y-4">
+                <div className=" w-full border dark:border-white p-4 rounded-lg space-y-4">
                     <div className="flex justify-between ">
                         <div className="flex-col">
                             <h1 className="text-lg font-medium">Lecture: Game of the day</h1>
@@ -34,10 +36,16 @@ const MonthSection = () => {
                             <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                         </div>
                         <div>
-                            <Image src={WatchButtons} />
+                            <Image className="block dark:hidden" src={WatchButtons} />
+                            <div className="hidden dark:block" >
+                                <div className=" flex items-center rounded-[8px] border border-white px-[18px] py-[12px] font-semibold" >
+                                    <Youtube size={20} className="mr-2" />
+                                    Watch
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="border"></div>
+                    <div className="border dark:border-white"></div>
                     <div className="flex justify-between">
                         <div className="flex-col">
                             <h1 className="text-lg font-medium">Lecture: Game of the day</h1>
@@ -49,7 +57,13 @@ const MonthSection = () => {
                             <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                         </div>
                         <div>
-                            <Image src={WatchButtons} />
+                            <Image className="block dark:hidden" src={WatchButtons} />
+                            <div className="hidden dark:block" >
+                                <div className=" flex items-center rounded-[8px] border border-white px-[18px] py-[12px] font-semibold" >
+                                    <Youtube size={20} className="mr-2" />
+                                    Watch
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -57,11 +71,11 @@ const MonthSection = () => {
             </div>
             <div
                 className="flex gap-4 mt-10">
-                <div className="flex flex-col rounded-lg border  p-6 items-center justify-center text-center">
+                <div className="flex flex-col rounded-lg border dark:border-white p-6 items-center justify-center text-center">
                     <p className="text-4xl text-orange-600">WED</p>
-                    <p className="text-4xl text-black">12</p>
+                    <p className="text-4xl text-black dark:text-white">12</p>
                 </div>
-                <div className="border w-full flex p-4 justify-between rounded-lg">
+                <div className="border dark:border-white w-full flex p-4 justify-between rounded-lg">
                     <div className="flex-col">
                         <h1 className="text-lg font-medium">Lecture: Game of the day</h1>
                         <p className="text-xl font-normal">10:30 PM - 11:30 PM </p>
@@ -72,7 +86,13 @@ const MonthSection = () => {
                         <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                     </div>
                     <div>
-                        <Image src={WatchButtons} />
+                        <Image className="block dark:hidden" src={WatchButtons} />
+                        <div className="hidden dark:block" >
+                            <div className=" flex items-center rounded-[8px] border border-white px-[18px] py-[12px] font-semibold" >
+                                <Youtube size={20} className="mr-2" />
+                                Watch
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,9 +8,9 @@ const PracticeExame = () => {
             {/* Header Section */}
             <div className="flex flex-wrap justify-between items-start gap-6">
                 <div className="w-full sm:w-auto">
-                    <h1 className="font-semibold text-4xl">Practice Exam 1 (Dec 2014)</h1>
+                    <h1 className="font-semibold text-4xl text-center md:text-start dark:text-white">Practice Exam 1 (Dec 2014)</h1>
                 </div>
-                <div className="flex-col justify-end text-right items-end w-full sm:w-auto">
+                <div className="flex-col justify-center items-center md:justify-end text-center md:text-right md:items-end w-full sm:w-auto">
                     <p className="text-blue-500 font-normal text-lg">View Answers & Explanation</p>
                     <p className="text-gray-400 font-normal text-md">Completed 23 days ago at 3:54pm ET on 4/15/21</p>
                 </div>
@@ -34,15 +34,15 @@ const PracticeExame = () => {
 
                 {/* Progress Bars and Information */}
                 <div className="w-full sm:w-[calc(50%-10px)] flex flex-col gap-6">
-                    <div className="flex justify-between w-full gap-5">
-                        <p className="flex gap-2">Correct <span className="font-bold text-lg">75</span></p>
+                    <div className="flex justify-between dark:text-white w-full gap-5">
+                        <p className="flex gap-2 dark:text-white">Correct <span className="font-bold text-lg">75</span></p>
                         <ProgressHome progress={75} />
                     </div>
-                    <div className="flex justify-between w-full gap-5">
+                    <div className="flex justify-between dark:text-white w-full gap-5">
                         <p className="flex gap-2">Correct <span className="font-bold text-lg">75</span></p>
                         <ProgressHome progress={20} />
                     </div>
-                    <div className="flex justify-between w-full gap-5">
+                    <div className="flex justify-between dark:text-white w-full gap-5">
                         <p className="flex gap-2">Correct <span className="font-bold text-lg">75</span></p>
                         <ProgressHome progress={9} />
                     </div>
