@@ -48,11 +48,11 @@ const Progress = () => {
                     />
                 </div>
                 <div className="border border-gray-200 rounded-[10px] 2xl:px-[30px] py-[-30px] w-full h-full flex items-center justify-center">
-                    <Image src={MeterBar} className="w-[80%] py-[10px] md:py-0 md:w-[108px]" alt="img" />
+                    <Image src={MeterBar} className="w-[128px] py-[10px] md:py-0 md:w-[128px]" alt="img" />
                 </div>
                 <div className="rounded-[10px] w-full h-full  border  flex flex-col items-center justify-center">
                     <div className='text-center text-[26px] pt-[24px] font-semibold text-[#0866FF]' >2:45</div>
-                    <Image src={TimeStart} className="w-full " alt="img" />
+                    <Image src={TimeStart} className="w-[108px] md:w-full" alt="img" />
                 </div>
                 <div className="border border-gray-200 rounded-[10px] px-[40px] py-[10px]  flex items-center justify-center">
                     <RCprogress
@@ -65,7 +65,7 @@ const Progress = () => {
                     />
                 </div>
                 <div className="border border-gray-200 rounded-[10px] w-full h-full px-[10px] 2xl:px-[30px] py-[-30px] flex items-center justify-center">
-                    <Image src={CirclePRogress} className="w-[80%] py-[10px] md:py-0  md:w-[108px] " alt="img" />
+                    <Image src={CirclePRogress} className="w-[128px] py-[10px] md:py-0  md:w-[128px] " alt="img" />
                 </div>
             </div>
 
