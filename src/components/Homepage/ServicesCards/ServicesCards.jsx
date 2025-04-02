@@ -53,10 +53,10 @@ const ServicesCards = ({ title, id, activeCard, setActiveCard }) => {
     return (
         <div className="mx-[12px]" >
             <div
-                className={`  dark:bg-gray-900 shadow-md transition-all min-w-[412px] p-[40px] w-fit cursor-pointer  duration-100 ${isActive ? ' bg-gradient-to-bl from-[#EAFFFE] to-[#EAFFFE]' : 'bg-gradient-to-bl from-[#FFFFFF] to-[#FBF6FF]'}`}
+                className={`  dark:bg-gray-900 shadow-md transition-all min-w-[300px] p-[40px] w-fit cursor-pointer  duration-100 ${isActive ? ' bg-gradient-to-bl from-[#EAFFFE] to-[#EAFFFE] dark:from-gray-800 dark:to-gray-900' : 'bg-gradient-to-bl from-[#FFFFFF] to-[#FBF6FF] dark:from-gray-700 dark:to-gray-800'}`}
                 onClick={handleCardClick}
             >
-                <div className="text-[#858FDD] text-[29px] font-[500]">{title}</div>
+                <div className="text-[#858FDD] text-[29px] w-[99%] font-[500]">{title}</div>
 
                 <div className="flex items-center mt-[28px] gap-[21px]">
                     <div className="text-[33px] bg-blue-100 dark:text-black rounded-full p-[29px] border border-[#0866FF]">RC</div>

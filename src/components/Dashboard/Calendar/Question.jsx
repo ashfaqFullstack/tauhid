@@ -32,7 +32,7 @@ const Question = () => {
                     <QuestionItem reading={true} status="Skipped" />
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-gray-200 dark:from-gray-800 to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white dark:from-black to-transparent pointer-events-none"></div>
             </div>
 
         </div>

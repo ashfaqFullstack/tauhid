@@ -9,6 +9,7 @@ import StartSection from "@/components/Dashboard/Stats/StartSection";
 import ByDifficulty from "@/components/Homepage/Bydifficulty/ByDifficulty";
 import ByFamily from "@/components/Homepage/ByFamily/ByFamily";
 import FlaggedQuestions from "@/components/Homepage/flagedQestion/flagedQuestion";
+import HomeHeader from "@/components/Homepage/HomeHeader";
 import PracticeExame from "@/components/Homepage/PracticeExam/practiveExame";
 import ServicesCards from "@/components/Homepage/ServicesCards/ServicesCards";
 import { useState } from "react";
@@ -30,10 +31,10 @@ const page = () => {
     return (
         <div className="" >
             <div className="mx-[2%] md:mx-[5%] xl:mx-[8%] mt-[20px] md:mt-[30px] lg:mt-[60px]" >
-                <HeaderDashboard Title={"Saad"} />
-                <div className='relative' >
+                <HomeHeader title={"Saad"} />
+                {/* <div className='relative' >
                     <StartSection />
-                </div>
+                </div> */}
 
                 <div className="mt-10">
                     <PracticeExame />
@@ -41,7 +42,7 @@ const page = () => {
             </div>
 
             {/* Service Cards */}
-            <div className=" my-[70px] ml-[10px] md:ml-[50px] flex overflow-x-auto">
+            <div className=" my-[70px] mx-[2%] md:mx-[5%] xl:mx-[8%] flex overflow-x-auto">
                 {services.map((service) => (
                     <ServicesCards
                         key={service.id}
@@ -69,12 +70,12 @@ const page = () => {
                 <div className='my-[30px] flex gap-[20px] overflow-x-auto' >
                     <Sections tableview={tableView} />
                 </div>
-                <div className='overflow-x-auto' >
-
-                    {table === "Sections" && <Table />}
-                    {table === "Questions" && <Question />}
-                    {table === "Tests" && <Tests />}
-
+                <div >
+                    <div className="overflow-x-auto" >
+                        {table === "Sections" && <Table />}
+                        {table === "Questions" && <Question />}
+                        {table === "Tests" && <Tests />}
+                    </div>
                     <div className='px-[40px] py-[22px] flex items-center justify-between' >
                         <div className='text-[#787878] dark:text-white' >Viewing 1-20 of 90 results</div>
                         <div className='flex items-center gap-[13px]' >

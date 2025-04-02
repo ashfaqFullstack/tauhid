@@ -42,7 +42,7 @@ const page = () => {
                         <FilterItem dropdown={false} filter="Status" />
                     </div>
                     <div className="my-[30px] flex gap-[20px] overflow-x-auto">
-                        <Sections tableview={tableView} />
+                        <Sections width='dashboard' tableview={tableView} />
                     </div>
                     <div className="overflow-x-auto">
                         {table === "Sections" && <Table />}

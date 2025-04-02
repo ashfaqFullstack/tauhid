@@ -24,7 +24,7 @@ const PracticeExame = () => {
                         <CircularProgress
                             percentage={75}
                             title="Progress"
-                            size={170}
+                            size={223}
                             bgColor=""
                             color="stroke-[#0866FF]"
                             strokeWidth={21}

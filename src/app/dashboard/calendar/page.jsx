@@ -31,13 +31,14 @@ const page = () => {
             <div className='my-[30px] flex gap-[20px] overflow-x-auto' >
                 <Sections tableview={tableView} />
             </div>
-            <div className='overflow-x-auto' >
+            <div >
+                <div className='overflow-x-auto' >
+                    {table === "Sections" && <Table />}
+                    {table === "Questions" && <Question />}
+                    {table === "Tests" && <Tests />}
+                </div>
 
-                {table === "Sections" && <Table />}
-                {table === "Questions" && <Question />}
-                {table === "Tests" && <Tests />}
-
-                <div className='px-[40px] py-[22px] flex items-center justify-between' >
+                <div className='px-[40px] py-[22px] w-full flex items-center justify-between' >
                     <div className='text-[#787878] dark:text-white' >Viewing 1-20 of 90 results</div>
                     <div className='flex items-center gap-[13px]' >
                         <div className='border border-[#D9DEE4] cursor-pointer text-[#D9DEE4] dark:border-[#787878] dark:text-[#787878] rounded-[7px] p-[10px]' >Previous</div>

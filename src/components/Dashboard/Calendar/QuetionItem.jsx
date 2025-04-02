@@ -10,7 +10,7 @@ import QuestionButton from '@/components/Buttons/QuestionButton'
 const QuestionItem = ({ reading, status }) => {
     const safeValue = 3;
     return (
-        <div className='flex items-center justify-between gap-[37px]  py-[12px] text-[#494949] dark:text-white border-t-[1px] border-[#D9DEE4]' >
+        <div className='flex items-center justify-between gap-[37px] px-[10px] py-[12px] text-[#494949] dark:text-white border-t-[1px] border-[#D9DEE4]' >
             <div className='min-w-[291px] flex items-center gap-[4px]' >
                 Lorem ipsum Title Sample
                 {status == 'Correct' && <QuestionButton title={status} text="#3A6E1F" bgColor="#D9F8BA" border="#B8EE81" />}

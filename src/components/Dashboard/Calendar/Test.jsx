@@ -2,7 +2,7 @@ import TestItem from './TestItem'
 
 const Tests = () => {
     return (
-        <div className='my-[30px] min-w-[1200px] ' >
+        <div className='my-[30px] min-w-[1290px] ' >
             {/* table headings  */}
             <div className='grid grid-cols-12 px-[10px]  py-[12px] text-[#494949] dark:text-white font-semibold border-y-[1px] border-[#D9DEE4]' >
                 <div className='col-span-1' >Date</div>
@@ -15,7 +15,7 @@ const Tests = () => {
                 <div className='col-span-1' >Sec4</div>
                 <div className='col-span-1' >Time</div>
                 <div className='col-span-1' >Status</div>
-                <div className='col-span-1' >Actions</div>
+                <div className='col-span-1 pl-[21px]' >Actions</div>
             </div>
 
             {/* Table items  */}
@@ -43,7 +43,7 @@ const Tests = () => {
                     <TestItem reading={false} />
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-gray-200 dark:from-gray-800 to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-gray-200 dark:from-gray-900 to-transparent pointer-events-none"></div>
             </div>
 
         </div>

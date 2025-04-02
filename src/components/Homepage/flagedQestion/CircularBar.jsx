@@ -18,7 +18,7 @@ const CircularProgressBar = ({ data }) => {
                     fill="none"
                     stroke="#f0f0f0"
                     strokeWidth="10"
-                    className="opacity-20"
+                    className="opacity-20 dark:opacity-0"
                 />
 
                 {/* Segments */}
@@ -70,7 +70,7 @@ const CircularProgressBar = ({ data }) => {
                     cy="50"
                     r="30"
                     fill="white"
-                    className="dark:fill-gray-900"
+                    className="dark:fill-black"
                 />
             </svg>
         </div>

@@ -27,15 +27,15 @@ const TableItem = ({ reading }) => {
             <div className='col-span-1' >12/25</div>
             <div className='col-span-1 flex gap-[4px] items-center' >20% <Progress value={20} className="bg-[#DDEDFF]" /></div>
             <div className='col-span-1' >02h 45m/35m</div>
-            <div className='col-span-1/2 text-[11px] font-semibold' >
+            <div className='col-span-1 text-[11px] font-semibold' >
                 {
                     reading ?
-                        <div className='flex items-center dark:text-[#3A6E1F] text-[#3A6E1F] gap-[5px] border-[#B8EE81] w-fit px-[9] py-[4px] rounded-[5.2px] border bg-[#D9F8BA]' >
+                        <div className='min-w-[99px] flex items-center justify-center dark:text-[#3A6E1F] text-[#3A6E1F] gap-[5px] border-[#B8EE81] w-fit py-[4px] rounded-[5.2px] border bg-[#D9F8BA]' >
                             Completed
                             <Check size={11} className='text-[#3A6E1F]' />
                         </div>
                         :
-                        <div className='flex items-center dark:text-[#494949] gap-[5px] border-[#D9DEE4] w-fit px-[9] py-[4px] rounded-[5.2px] border bg-[#ECEEF1]' >
+                        <div className='min-w-[99px] flex items-center justify-center dark:text-[#494949] gap-[5px] border-[#D9DEE4] w-fit py-[4px] rounded-[5.2px] border bg-[#ECEEF1]' >
                             Continue
                             <CirclePlay size={11} className='text-[#1877F2]' />
                         </div>
