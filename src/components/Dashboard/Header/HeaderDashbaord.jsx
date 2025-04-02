@@ -30,12 +30,6 @@ const HeaderDashboard = ({ Title }) => {
                         <IconButton title="Create" count={'+'} />
                     </div>
                 </div>
-
-                {/* <div className='flex items-end md:items-center flex-col  md:flex-row gap-[20px]' >
-                    <IconButton source={CalendarCheck} title="Today" />
-                    <IconButton source={Calendar} title="Select" />
-                    <IconButton source={Slider} title="Filter" count={'12'} />
-                </div> */}
             </div>
         </div>
     )

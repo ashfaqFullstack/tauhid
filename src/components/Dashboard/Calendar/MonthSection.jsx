@@ -36,7 +36,7 @@ const MonthSection = () => {
                             <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                         </div>
                         <div>
-                            <Image className="block dark:hidden" src={WatchButtons} />
+                            <Image className="block dark:hidden w-[128px]" src={WatchButtons} />
                             <div className="hidden dark:block" >
                                 <div className=" flex items-center rounded-[8px] border border-white px-[18px] py-[12px] font-semibold" >
                                     <Youtube size={20} className="mr-2" />
@@ -57,7 +57,7 @@ const MonthSection = () => {
                             <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                         </div>
                         <div>
-                            <Image className="block dark:hidden" src={WatchButtons} />
+                            <Image className="block dark:hidden w-[128px]" src={WatchButtons} />
                             <div className="hidden dark:block" >
                                 <div className=" flex items-center rounded-[8px] border border-white px-[18px] py-[12px] font-semibold" >
                                     <Youtube size={20} className="mr-2" />
@@ -86,7 +86,7 @@ const MonthSection = () => {
                         <button className="bg-[#494949] text-white rounded-md px-4 py-1">LR</button>
                     </div>
                     <div>
-                        <Image className="block dark:hidden" src={WatchButtons} />
+                        <Image className="block dark:hidden w-[128px]" src={WatchButtons} />
                         <div className="hidden dark:block" >
                             <div className=" flex items-center rounded-[8px] border border-white px-[18px] py-[12px] font-semibold" >
                                 <Youtube size={20} className="mr-2" />

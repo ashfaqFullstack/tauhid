@@ -8,7 +8,7 @@ import RIcon from "@/assets/icons/RIcon.svg"
 const TestItem = ({ reading }) => {
     return (
         <>
-            <div className='w-[101%] border-t-[1px] border-[#D9DEE4]'></div>
+            <div className='w-[103%] border-t-[1px] border-[#D9DEE4]'></div>
             <div className='grid grid-cols-12 px-[10px] py-[12px] text-[#494949] dark:text-white ' >
                 <div className='col-span-1' >Apr 25, 2023</div>
                 <div className='col-span-1' >LSAT 77</div>

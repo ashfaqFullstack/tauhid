@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const IconButton = ({ source, title, count }) => {
     return (
-        <div className={`flex items-center justify-center gap-[10px] h-[54px] ${title == 'Create' && " min-w-[130px]"} border border-[#D6D6DB] p-[12px] rounded-[12px]`} >
+        <div className={`flex cursor-pointer items-center justify-center gap-[10px] h-[54px] ${title == 'Create' && " min-w-[130px]"} border border-[#D6D6DB] p-[12px] rounded-[12px]`} >
             {
                 source &&
                 <Image src={source} alt='Icon' className='h-auto w-auto' />

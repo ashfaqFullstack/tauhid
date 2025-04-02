@@ -8,7 +8,7 @@ const StartNewSection = () => {
                     Here you can track all of your key stats and access key features.
                 </div>
 
-                <div className="w-fit self-end mt-[20px] py-[12px] px-[20px] text-[16px] lg:text-[20px] font-semibold border border-[#BFBFBF] dark:border-white rounded-[12px] text-black dark:text-white flex items-center">
+                <div className="w-fit cursor-pointer self-end mt-[20px] py-[12px] px-[20px] text-[16px] lg:text-[20px] font-semibold border border-[#BFBFBF] dark:border-white rounded-[12px] text-black dark:text-white flex items-center">
                     <Plus className="mr-[10px] text-[18.19px]" />
                     <span>Start New Section</span>
                 </div>
