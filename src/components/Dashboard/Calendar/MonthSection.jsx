@@ -6,14 +6,14 @@ import { Youtube } from "lucide-react"
 const MonthSection = () => {
     return (
         <div>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-[20px] lg:items-center">
                 <div className="flex gap-4 ">
                     <h1 className="font-bold text-2xl">November</h1>
                     <p className="font-medium text-2xl">2023</p>
                 </div>
-                <div className="border-b-2 border-[#494949] w-[50%] mx-[29px]" ></div>
-                <div className='flex justify-between flex-wrap' >
-                    <div className='flex gap-[9px]' >
+                <div className="border-b-2 border-[#494949] w-[50%] hidden lg:block mx-[29px]" ></div>
+                <div className='flex flex-col lg:flex-row lg:justify-between flex-wrap' >
+                    <div className='flex gap-[9px] flex-wrap' >
                         <Button Title="Today" blue={true} />
                         <Button Title="Bookmarked" blue={false} />
                     </div>
