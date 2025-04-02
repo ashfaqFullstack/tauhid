@@ -7,11 +7,13 @@ const HeaderDashboard = ({ Title }) => {
     return (
         <div className='flex justify-between ' >
             {/* title of the header //**username**\\ */}
-            <div className='font-bold text-[38px] md:text-[48px] lg:text-[54px] flex relative w-fit h-fit' >
-                <div className='h-fit font-bold w-fit leading-[44px]' >
-                    Hi {Title}
+            <div className=' w-fit h-fit' >
+                <div className=' text-[48px]  md:text-[54px] font-bold leading-[44px] '>
+                    <div className='relative w-fit' >
+                        Hi {Title}
+                        <div className='lg:w-[11px] w-[12px] h-[11px]  bg-btn rounded-full absolute bottom-1  right-[-12px]'></div>
+                    </div>
                 </div>
-                <div className='lg:w-[11px] w-[12px] h-[12px] bg-btn rounded-full absolute bottom-1 md:bottom-0 right-[-11px] sm:right-[-12px] '></div>
             </div>
             <div className="flex flex-col gap-[20px]" >
                 {/* input  */}
